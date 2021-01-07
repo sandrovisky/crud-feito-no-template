@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
+		<title>CRUD</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -49,22 +49,26 @@
 								<P>Insira os dados</P>
 								<form method="post" action="#">
 									<div class="fields">
-										<div class="field half">
+										<div class="field">
 											<label for="name">Name</label>
 											<input type="text" name="name" id="name" />
 										</div>
 										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<label for="nascimento">Nascimento</label>
+											<input type="date" name="nascimento" id="nascimento" />
 										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
+										<div class="field half">
+											<label for="message">Sexo</label>
+											<select id=sexo>
+												<option></option>
+												<option>Masculino</option>
+												<option>Feminino</option>
+												<option>Outros</option>
+											</select>
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
+										<li><input type="submit" value="cadastrar" class="primary" /></li>
 									</ul>
 								</form>
 							</article>
