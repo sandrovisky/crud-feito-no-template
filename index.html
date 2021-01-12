@@ -66,9 +66,12 @@
 												<option>Outros</option>
 											</select>
 										</div>
+										<div id = "estados" onload="opt()">
+
+										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="cadastrar" class="primary" /></li>
+										<li><input type="button" value="cadastrar" onclick="opt()" class="primary" /></li>
 									</ul>
 								</form>
 							</article>
@@ -389,6 +392,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/scripts.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 	</body>
 </html>
