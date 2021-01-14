@@ -47,10 +47,10 @@
 							<article id="Cadastro">
 								<h2 class="major">Cadastro</h2>
 								<P>Insira os dados</P>
-								<form method="post" action="#">
+								<form action="#">
 									<div class="fields">
 										<div class="field">
-											<label for="name">Name</label>
+											<label for="name">Nome</label>
 											<input type="text" name="name" id="name" />
 										</div>
 										<div class="field half">
@@ -66,12 +66,21 @@
 												<option>Outros</option>
 											</select>
 										</div>
-										<div id = "estados" onload="opt()">
-
+										<div class = "field half">
+											<label for="estados" >Selecione o Estado</label>
+											<select id="estados" onchange="selecionacidade(value)">
+												<option value=""></option>
+											</select>
+                                        </div>
+                                        <div class = "field half">
+											<label for="cidades">Selecione a Cidade</label>
+											<select id="cidades" disabled>
+												<option value="">Selecione o Estado primeiro</option>
+											</select>
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="button" value="cadastrar" onclick="opt()" class="primary" /></li>
+										<li><input type="submit" value="cadastrar" class="primary" /></li>
 									</ul>
 								</form>
 							</article>
