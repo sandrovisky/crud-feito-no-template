@@ -132,7 +132,7 @@ fetch('http://localhost:3333/cadastro').then(response => {
         cell4.innerHTML = cadastro.sexo;
         cell5.innerHTML = cadastro.estado;
         cell6.innerHTML = cadastro.cidade;
-        cell6.innerHTML = `<input type = 'button' id = ${cadastro.id} value = 'Editar' class='small'><input type = 'button' value = 'Excluir' onclick= 'excluir()' class='small'>`;
+        cell7.innerHTML = `<input type = 'button' id = ${cadastro.id} value = 'Editar' class='small'><input type = 'button' value = 'Excluir' onclick= 'excluir()' class='small'>`;
     })
     console.log(data)
 }).catch(err => {
