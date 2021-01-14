@@ -1028,7 +1028,7 @@ input, select, textarea {
 		letter-spacing: 0.2rem;
 		line-height: 2.75rem;
 		outline: 0;
-		padding: 0 1.25rem 0 1.35rem;
+		margin-top: 5pt;
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -1074,7 +1074,8 @@ input, select, textarea {
 		.button.small {
 			font-size: 0.6rem;
 			height: 2.0625rem;
-			line-height: 2.0625rem;
+            line-height: 2.0625rem;
+
 		}
 
 		input[type="submit"].primary,

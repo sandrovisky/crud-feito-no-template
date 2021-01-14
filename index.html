@@ -30,9 +30,9 @@
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#Cadastro">Cadastro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#tnc">tnc</a></li>
+								<li><a href="#novocadastro">Novo Cadastro</a></li>
+								<li><a href="#cadastros">Lista</a></li>
+								<li><a href="#huehue">huehue</a></li>
 								<li><a href="#about">About</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
@@ -44,14 +44,14 @@
 					<div id="main">
 
 						<!-- Cadastro -->
-							<article id="Cadastro">
-								<h2 class="major">Cadastro</h2>
+							<article id="novocadastro">
+								<h2 class="major">Novo Cadastro</h2>
 								<P>Insira os dados</P>
 								<form action="#">
 									<div class="fields">
 										<div class="field">
-											<label for="name">Nome</label>
-											<input type="text" name="name" id="name" />
+											<label for="nome">Nome</label>
+											<input type="text" name="nome" id="nome" />
 										</div>
 										<div class="field half">
 											<label for="nascimento">Nascimento</label>
@@ -60,42 +60,63 @@
 										<div class="field half">
 											<label for="message">Sexo</label>
 											<select id=sexo>
-												<option></option>
+                                                <option></option>
+                                                <option selected></option>
 												<option>Masculino</option>
 												<option>Feminino</option>
 												<option>Outros</option>
 											</select>
 										</div>
 										<div class = "field half">
-											<label for="estados" >Selecione o Estado</label>
-											<select id="estados" onchange="selecionacidade(value)">
+											<label for="estado" >Selecione o Estado</label>
+											<select id="estado" onchange="selecionacidade(value)">
 												<option value=""></option>
 											</select>
                                         </div>
                                         <div class = "field half">
-											<label for="cidades">Selecione a Cidade</label>
-											<select id="cidades" disabled>
+											<label for="cidade">Selecione a Cidade</label>
+											<select id="cidade" disabled>
 												<option value="">Selecione o Estado primeiro</option>
 											</select>
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="cadastrar" class="primary" /></li>
+										<li><input type="button" onclick = "cadastrar()" value="cadastrar" class="primary" /></li>
 									</ul>
 								</form>
 							</article>
 
 						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+							<article id="cadastros">
+                                <h2 class="major">Lista de Cadastros</h2>
+                                <div>
+                                    <table className = 'table bg-light mt-3'>
+                                        <thead>  
+                                            <tr>
+                                                <th>Id</th>
+                                                <th>Nome</th>
+                                                <th>Data de Nascimento</th>
+                                                <th>Sexo</th>
+                                                <th>Estado</th>
+                                                <th>Cidade</th>
+                                                <th>#</th>
+                                            </tr>
+                                        </thead>
+                    
+                                        <tbody id = "lista">
+                
+                                        </tbody>              
+                                        
+                                    </table>
+                                    
+                                </div>
+								
+								
 							</article>
 
 						<!-- tnc -->
-						<article id="tnc">
-							<h2 class="major">tnc</h2>
+						<article id="huehue">
+							<h2 class="major">HUE</h2>
 							<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
 							<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
 							<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
